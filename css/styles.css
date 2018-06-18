@@ -1,6 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 
+/*ensures that site will be repsonsive*/
+img, embed,
+object, video {
+  max-width: 100%;
+}
+
 body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
@@ -136,6 +142,8 @@ nav h1 a {
   margin: 0;
   padding: 30px 15px 60px;
   text-align: center;
+  display: flex;
+  flex-flow: row wrap;
 }
 #restaurants-list li {
   background-color: #fff;
@@ -145,7 +153,7 @@ nav h1 a {
   min-height: 380px;
   padding: 0 30px 25px;
   text-align: left;
-  width: 270px;
+  width: 100%;
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
