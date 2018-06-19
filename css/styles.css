@@ -313,9 +313,11 @@ nav h1 a {
 }
 
 .inside #footer {
+    /*display: flex;*/
     bottom: 0;
     /*position: absolute;*/
-    width: 100%;
+    max-width: 100%;
+    text-align: center;
 }
 
 #restaurant-name {
