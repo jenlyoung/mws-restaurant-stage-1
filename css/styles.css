@@ -88,9 +88,9 @@ nav h1 {
 
 nav h1 a {
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 200;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     text-transform: uppercase;
     /*padding: 15px*/
 }
@@ -410,6 +410,10 @@ nav h1 a {
         justify-content: space-around;
     }
 
+    nav h1 a {
+        font-size: 24px;
+    }
+
     .inside #restaurant-name {
         font-size: 24px;
     }
@@ -423,6 +427,9 @@ nav h1 a {
     #restaurants-list li {
         margin: 10px;
         max-width: 272px;
+    }
+    nav h1 a {
+        font-size: 24px;
     }
 
     .inside #restaurant-name {
