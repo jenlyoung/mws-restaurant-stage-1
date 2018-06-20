@@ -96,11 +96,10 @@ nav h1 a {
 }
 
 #breadcrumb {
-    padding: 10px 20px 16px;
-    /*padding: 10px;*/
+    /*padding: 10px 20px 16px;*/
+    padding: 10px;
     list-style: none;
     background-color: #eee;
-    font-size: 25px;
     margin: 0;
     /*width: calc(50% - 80px);*/
     max-width: 100%
@@ -109,6 +108,8 @@ nav h1 a {
 /* Display list items side by side */
 #breadcrumb li {
     display: inline;
+    font-size: 17px;
+    padding: 13px 0 13px 10px;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
@@ -209,25 +210,7 @@ nav h1 a {
 /*}*/
 /*}*/
 
-/*!*media query*!*/
-@media screen and (min-width: 801px) and (max-width: 1080px) {
-    #restaurants-list li {
-        max-width: 39%;
-        margin: 10px;
-        justify-content: space-around;
-    }
-}
 
-/*media query*/
-@media screen and (min-width: 1081px) {
-    /*#restaurants-list:last-child {*/
-    /*justify-content: flex-start;*/
-    /*}*/
-    #restaurants-list li {
-        margin: 10px;
-        max-width: 272px;
-    }
-}
 
 #restaurants-list .restaurant-img {
     background-color: #ccc;
@@ -313,7 +296,7 @@ nav h1 a {
 
 .inside #map {
 
-    height: 250px;
+    height: 300px;
     width: 100%;
     background-color: #ccc;
 }
@@ -355,7 +338,7 @@ nav h1 a {
     font-weight: 300;
     letter-spacing: 10px;
     /*margin: 0 0 20px;*/
-    /*padding: 2px 0;*/
+    padding: 7px 0;
     text-align: center;
     text-transform: uppercase;
     width: 100%;
@@ -377,7 +360,7 @@ nav h1 a {
 
 #reviews-container h2 {
     color: #f58500;
-    font-size: 24pt;
+    font-size: 20pt;
     font-weight: 300;
     letter-spacing: -1px;
     padding-bottom: 1pt;
@@ -416,10 +399,33 @@ nav h1 a {
 }
 
 
+/* ====================== Media Queries ====================== */
+
+
+/*!*media query*!*/
 @media screen and (min-width: 801px) and (max-width: 1080px) {
     #restaurants-list li {
         max-width: 39%;
         margin: 10px;
         justify-content: space-around;
+    }
+
+    .inside #restaurant-name {
+        font-size: 24px;
+    }
+}
+
+/*media query*/
+@media screen and (min-width: 1081px) {
+    /*#restaurants-list:last-child {*/
+    /*justify-content: flex-start;*/
+    /*}*/
+    #restaurants-list li {
+        margin: 10px;
+        max-width: 272px;
+    }
+
+    .inside #restaurant-name {
+        font-size: 24px;
     }
 }
