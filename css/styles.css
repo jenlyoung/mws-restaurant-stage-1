@@ -100,7 +100,7 @@ nav h1 a {
     /*padding: 10px;*/
     list-style: none;
     background-color: #eee;
-    font-size: 17px;
+    font-size: 25px;
     margin: 0;
     /*width: calc(50% - 80px);*/
     max-width: 100%
@@ -113,7 +113,7 @@ nav h1 a {
 
 /* Add a slash symbol (/) before/behind each list item */
 #breadcrumb li + li:before {
-    padding: 8px;
+    padding: 5px;
     color: black;
     content: "/\00a0";
 }
@@ -122,6 +122,7 @@ nav h1 a {
 #breadcrumb li a {
     color: #0275d8;
     text-decoration: none;
+    padding: 10px;
 }
 
 /* Add a color on mouse-over */
@@ -293,23 +294,24 @@ nav h1 a {
 }
 
 .inside #restaurant-img {
-    width: 100%;
-    max-height: 280px;
+    /*width: 100%;*/
+    /*max-height: 350px;*/
 }
 
 .inside #map-container {
     background: blue none repeat scroll 0 0;
     height: 87%;
-    position: fixed;
+    /*position: fixed;*/
     right: 0;
     top: 80px;
     width: 100%;
 }
 
 .inside #map {
-    background-color: #ccc;
-    height: 100%;
+
+    height: 250px;
     width: 100%;
+    background-color: #ccc;
 }
 
 .inside #footer {
@@ -390,7 +392,7 @@ nav h1 a {
     list-style-type: none;
     margin: 0 0 30px;
     overflow: hidden;
-    padding: 0 20px 20px;
+    padding: 5px 20px 5px;
     position: relative;
     width: 85%;
 }
@@ -407,4 +409,13 @@ nav h1 a {
     width: 100%;
     padding-left: 20px;
     margin-bottom: 10px;
+}
+
+
+@media screen and (min-width: 801px) and (max-width: 1080px) {
+    #restaurants-list li {
+        max-width: 39%;
+        margin: 10px;
+        justify-content: space-around;
+    }
 }

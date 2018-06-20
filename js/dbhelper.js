@@ -149,10 +149,13 @@ class DBHelper {
   /**
    * Restaurant image URL.
    */
-  static imageUrlForRestaurant(restaurant) {
-    return (`/img/${restaurant.photograph}`);
+  static imageThumnailUrlForRestaurant(restaurant) {
+    return (`/images/${restaurant.id}-400_tn.jpg`);
   }
 
+  static imageUrlForRestaurant(restaurant) {
+        return (`/img/${restaurant.id}.jpg`);
+    }
   /**
    * Map marker for a restaurant.
    */
