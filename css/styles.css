@@ -30,7 +30,7 @@ ul, li {
 }
 
 a {
-    color: orange;
+    color: #c47a00;
     text-decoration: none;
 }
 
@@ -75,7 +75,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
     position: absolute;
     top: -40px;
     left: 0;
-    background: orange;
+    background: #c47a00;
     color: white;
     padding: 8px;
     z-index: 100;
@@ -241,7 +241,7 @@ nav h1 a {
 }
 
 #restaurants-list li h3 {
-    color: #f18200;
+    color: #c47a00;
     font-family: Arial, sans-serif;
     font-size: 14pt;
     font-weight: 200;
@@ -256,7 +256,7 @@ nav h1 a {
 }
 
 #restaurants-list li button {
-    background-color: orange;
+    background-color: #c47a00;
     border-bottom: 3px solid #eee;
     color: #fff;
     display: inline-block;
