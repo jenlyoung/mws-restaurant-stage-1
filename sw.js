@@ -6,9 +6,6 @@ self.addEventListener('install', function(event) {
                 "/",
                 "/css/styles.css",
                 "/data/restaurants.json",
-                "/images/",
-                "/img/",
-                "/js/",
                 "/js/dbhelper.js",
                 "/js/main.js",
                 "/js/register.js",
@@ -37,7 +34,14 @@ self.addEventListener('fetch', event => {
 
     event.respondWith(
         caches.match(event.request)
-            .then(response => response || fetch(event.request))
+            .then(response => {
+                return response || fetch(event.request).then(fr=>{
+                    return caches.open("testcache").then(c=>{
+                        c.put(event.request, fr.clone());
+                        return fr;
+                    })
+                });
+            })
             .catch(reason => {
             console.log(reason);
         })
