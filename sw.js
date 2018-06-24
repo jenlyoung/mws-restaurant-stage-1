@@ -1,7 +1,6 @@
 self.addEventListener('install', function(event) {
     event.waitUntil(
         caches.open('testcache').then(function(cache){
-            console.log('loading');
             return cache.addAll([
                 "/",
                 "/css/styles.css",
@@ -19,8 +18,6 @@ self.addEventListener('install', function(event) {
 
 
 self.addEventListener('fetch', event => {
-    console.log(`Fetching: ${event.request.url}`);
-
     const requestUrl = new URL(event.request.url);
 
     console.log(requestUrl.origin, location.origin);
@@ -31,7 +28,7 @@ self.addEventListener('fetch', event => {
             return;
         }
     }
-
+    //caching individual images and map
     event.respondWith(
         caches.match(event.request)
             .then(response => {
