@@ -1,8 +1,8 @@
 let restaurants,
   neighborhoods,
   cuisines;
-var newMap;
-var markers = [];
+let newMap;
+let markers = [];
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
@@ -84,7 +84,7 @@ initMap = () => {
       '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
       'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     id: 'mapbox.streets'
-  }).addTo(newMap);
+  }).addTo(self.newMap);
 
   updateRestaurants();
 }
